@@ -1,0 +1,68 @@
+.container {
+    width: 1260px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+  
+
+
+}
+
+.section {
+   
+  
+    margin: 40px 60px 0 0;
+} 
+ 
+
+
+.details {
+    height: 50px;
+    margin-left: 10px;
+    overflow: auto;
+
+
+}
+
+.header,
+.section-header,
+.section-details,
+button,
+h3 {
+    color: black;
+    font-size: 20px;
+    font-weight: 10px;
+    margin-left: 10px;
+    position: relative;
+}
+
+button {
+    border-radius: 5px;
+    margin-bottom: 4px;
+    font-size: 15px;
+
+}
+
+.section-form {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid red;
+
+}
+
+.p-accordion {
+    border: 1px solid black;
+
+
+}
+
+
+
+.content {
+   
+    overflow: hidden;
+    padding: 10px;
+}

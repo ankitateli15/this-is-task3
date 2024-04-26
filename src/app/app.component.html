@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6 col-sm-11 section ">
+      <div class="section-form ml-4">
+        <h3>Add Section</h3>
+        <label for="sectionHeader" class="section-header">Section Header: </label>
+        <input type="text" id="sectionHeader" class="header" [(ngModel)]="header"><br>
+        <br>
+        <label for="sectionDetails" class="section-details">Section Details: </label>
+        <textarea type="text" id="sectionDetails" class="details" [(ngModel)]="content"></textarea><br>
+        <br>
+        <button (click)="addSection()" class="btn btn-primary btn-block" style="font-size: 20px;">Add</button>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-md-6 mt-5">
+  
+      <p-accordion *ngFor="let sections of item" >
+        <p-accordionTab header={{sections.header}}>
+          <p class="content">
+            {{sections.content}}
+          </p>
+        </p-accordionTab>
+      </p-accordion>
+ 
+  </div>
+</div>
